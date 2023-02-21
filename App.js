@@ -1,14 +1,11 @@
 import './App.css';
+import Landing from '../src/components/Landing';
+import styled from 'styled-components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-          Hello
-        </p>
-      </header>
+    <div>
+      <Landing />
     </div>
   );
 }
