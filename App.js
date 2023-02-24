@@ -1,6 +1,6 @@
 import './App.css';
-import Landing from './pages/Landing';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Dashboard, Register, Landing, Error } from "../src/pages/index"
 
 function App() {
   return (
@@ -11,10 +11,10 @@ function App() {
         <Link to='/landing'>Landing</Link>
       </nav>
       <Routes>
-        <Route path="/" element={<div>Dashboard</div>} />
-        <Route path="/register" element={<div>Register</div>} />
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/landing" element={<Landing />} />
-        <Route path="*" element={<div>Error</div>} />
+        <Route path="*" element={<Error />} />
         
       </Routes>
       
